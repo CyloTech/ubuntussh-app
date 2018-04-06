@@ -6,7 +6,7 @@ ENV USER root
 
 RUN apt-get update
 
-RUN apt-get install -y openssh-server
+RUN apt-get install -y openssh-server curl
 RUN mkdir /var/run/sshd
 
 RUN echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
